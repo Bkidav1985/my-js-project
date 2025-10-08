@@ -1,0 +1,58 @@
+body{
+    background-image: linear-gradient(blue, white);
+    height: 100vh;
+}
+
+#myImg{
+    cursor: pointer;
+}
+#myImg:hover{
+    opacity: .5;
+    transition: 1.5s;
+}
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(white, blue);
+    padding-top: 50px;
+    display: none;
+}
+
+#img{
+    margin: auto;
+    width: 20%;
+    display: block;
+    max-width: 400px;
+    animation: display 1s;
+}
+
+#description{
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    animation: display 1s; 
+}
+
+@keyframes display{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+#close{
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+}
